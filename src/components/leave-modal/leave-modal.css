@@ -1,0 +1,55 @@
+.leave-modal-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    -webkit-animation: animation .2s ease-in-out;
+    animation: animation .2s ease-in-out;
+    overflow: hidden;
+}
+
+.leave-modal-container-open {
+    display: flex;
+}
+
+.leave-modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width: 680px;
+    min-height: 290px;
+    background-color: white;
+    color: black !important;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+    align-content: space-evenly;
+}
+
+.leave-modal h2 {
+    font-size: 44px;
+    color: black !important;
+    margin: 0 !important;
+}
+
+.leave-modal span {
+    width: 500px;
+    font-size: 20px;
+}
+
+.leave-modal .buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}

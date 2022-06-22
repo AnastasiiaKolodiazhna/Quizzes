@@ -1,0 +1,52 @@
+.single-quizz .card {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    max-width: 750px;
+    min-height: 550px;
+    border-radius: 25px;
+    margin: 20px auto;
+    padding: 40px;
+}
+
+.single-quizz .card .question {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.single-quizz .card .question-count {
+    font-weight: 500;
+    font-family: IBM Plex Sans;
+    display: flex;
+    align-items: center;
+}
+
+.single-quizz .card .question-count span:first-child {
+    font-size: 34px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+}
+
+.single-quizz .card .question-count,
+.single-quizz .card .question,
+.single-quizz .card .answers,
+.single-quizz .card .buttons {
+    width: 100%;
+}
+
+.single-quizz .card .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-quizz .card .answers {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 300px;
+}
+
+.single-quizz .card .card-header img {
+    height: 130px;
+}

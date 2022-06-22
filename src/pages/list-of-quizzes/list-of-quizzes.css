@@ -1,0 +1,122 @@
+.list-of-quizzes h2,
+.single-quizz h2,
+.quizz-result-page h2,
+.home-page h2 {
+    font-weight: 600;
+    font-size: 64px;
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+    padding: 25px;
+}
+
+.list-of-quizzes,
+.single-quizz,
+.quizz-result-page,
+.home-page {
+    padding-bottom: 25px;
+}
+
+.list-of-quizzes h2 span,
+.home-page h2 span {
+    font-weight: 200;
+    color: black;
+    background-color: #FEFD54;
+    padding: 10px;
+    line-height: 110px;
+}
+
+.list-of-quizzes .quizz-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    margin: 40px 10px;
+}
+
+
+.list-of-quizzes .quizz-cards .quizz-card {
+    height: 280px;
+    width: 300px;
+    margin-top: 15px;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+
+.quizz-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.quizz-card:hover .quizz-card-inner {
+    transform: rotateY(180deg);
+}
+
+.quizz-card-front,
+.quizz-card-back {
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.quizz-card-back {
+    transform: rotateY(180deg);
+}
+
+.quizz-card-front>div,
+.quizz-card-back>div {
+    padding: 15px 20px;
+}
+
+.quizz-card-back>div img {
+    height: 180px;
+    width: 180px;
+}
+
+
+
+.list-of-quizzes .quizz-cards .quizz-card .title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.list-of-quizzes .quizz-cards .quizz-card .card-header span {
+    color: #969AB0;
+    font-size: 16px;
+}
+
+.list-of-quizzes .quizz-cards .quizz-card .card-header img {
+    height: 80px;
+    width: 80px;
+}
+
+.card-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-container {
+    text-align: center;
+}
+
+@media (max-width: 481px) {
+
+    .list-of-quizzes h2,
+    .single-quizz h2,
+    .quizz-result-page h2,
+    .home-page h2 {
+        font-size: 54px;
+        margin: 5px 0;
+        padding: 15px;
+    }
+}
